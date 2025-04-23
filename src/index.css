@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
+
+/* Reset & Base */
+body {
+  margin: 0;
+  background-color: #0e0e0e;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* Navbar Container */
+nav.navbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar-logo img {
+  height: 60px;
+}
+
+/* Links Container */
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+/* Nav Links */
+.navbar-links li a {
+  text-decoration: none;
+  color: gold;
+  font-weight: 600;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a.active {
+  color: white;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: gold;
+  transition: 0.4s;
+}
+
+/* Responsive Style */
+@media (max-width: 768px) {
+  nav.navbar {
+    padding: 1rem 2rem;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #0e0e0e;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    display: none;
+    padding: 1rem 0;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+/* General responsiveness for all sections */
+section,
+.hero-section,
+.about-section,
+.services-section,
+footer {
+  padding: 2rem 1rem;
+}
+
+/* Typography scaling */
+h1, h2, h3 {
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+p, li {
+  font-size: 0.95rem;
+}
+
+/* Responsive Flex Sections (like about, services) */
+@media (max-width: 768px) {
+  .about-section,
+  .services-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-left,
+  .about-right,
+  .services-left,
+  .services-right {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 0;
+  }
+
+  .about-right img,
+  .services-left img {
+    max-width: 80%;
+  }
+
+  .blob {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .contact-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .top-right-image,
+  .lower-left-image {
+    display: none; /* Optional: hide floating images on mobile */
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-right {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}

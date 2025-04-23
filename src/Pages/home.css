@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Hero Section */
+.hero-section {
+  height: 80vh;
+  position: relative;
+  background-color: #000;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
+  overflow: hidden;
+}
+
+/* Hero Text Content */
+.hero-content {
+  z-index: 2;
+  max-width: 540px;
+}
+
+.hero-title {
+  font-size: 2.7rem; /* Slightly smaller */
+  font-family: 'Playfair Display', serif;
+  color: gold;
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-button {
+  background-color: gold;
+  color: black;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+}
+
+.contact-button:hover {
+  background-color: #d4af37;
+}
+
+/* Blob Image Styles */
+.top-right-image,
+.lower-left-image {
+  position: absolute;
+  z-index: 1;
+}
+
+.top-right-image {
+  top: 0;
+  right: 10.5rem;
+}
+
+.lower-left-image {
+  bottom: 1rem;
+  right: 60rem;
+}
+
+.blob {
+  width: 220px;
+  height: 220px;
+  background: gold;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blob img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Rotating Cancel Shapes */
+.cancel-shape {
+  position: absolute;
+  font-size: 2.5rem;
+  color: gold;
+  animation: rotateShape 10s linear infinite;
+}
+
+/* Cancel Shape Positions */
+.cancel-top-left {
+  top: 15rem;
+  left: 1rem;
+}
+
+.cancel-top-middle {
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cancel-bottom-middle {
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cancel-right-center {
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
+@keyframes rotateShape {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  background-color: #111;
+  color: white;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+p {
+  line-height: 1.8;         
+  letter-spacing: 1.0px;       
+  
+}
+
+
+.about-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-left ul li {
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-right img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 3px solid gold;
+}
+.about-section h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.6rem;
+  color: gold;
+  margin-bottom: 1rem;
+}
+
+.about-section h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.2rem;
+  color: gold;
+  margin-top: 2.5rem;
+}
+
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  background-color: #1a1a1a;
+  color: white;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.services-image-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+}
+
+.services-image-left img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 3px solid gold;
+}
+
+.services-content-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.services-content-right h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.2rem;
+  color: gold;
+  margin-bottom: 1.2rem;
+}
+
+.services-content-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-content-right ul li {
+  margin-bottom: 0.7rem;
+  font-family: 'Poppins', sans-serif;
+}

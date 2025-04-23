@@ -1,0 +1,105 @@
+.project-container {
+    background-color: #0e0e0e;
+    color: white;
+    padding: 4rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  .project-title {
+    font-size: 2.5rem;
+    color: gold;
+    margin-bottom: 3rem;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .project-card {
+    background: #1a1a1a;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-image {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .project-info {
+    padding: 1.5rem;
+    text-align: left;
+  }
+  
+  .project-info h2 {
+    color: gold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-info p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @media (max-width: 768px) {
+    .project-card {
+      flex-direction: column;
+    }
+    .project-info h2 {
+      font-size: 1.5rem;
+    }
+    .project-info p {
+      font-size: 1rem;
+    }
+  }
+  /* Contact Button Styling */
+.contact-button-container {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .contact-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #f0a500;
+  }
+  
+  .contact-button:focus {
+    outline: none;
+  }
+  

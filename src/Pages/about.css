@@ -1,0 +1,130 @@
+.about-container {
+    background-color: #0e0e0e;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 3rem 1.5rem; /* Reduced padding */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-section,
+  .services-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem; /* Slightly reduced gap between items */
+    margin-bottom: 3rem; /* Reduced spacing between sections */
+    flex-wrap: wrap;
+  }
+  
+  
+  /* Text Styling */
+  .about-text, .services-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about-text h1,
+  .services-text h2 {
+    font-family: 'Merriweather', serif;
+    color: gold;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text p,
+  .services-text ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+  
+  /* Image Frame Styling */
+  .about-image-frame,
+  .services-image-frame {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image-frame img,
+  .services-image-frame img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    border: 3px solid gold;
+    object-fit: cover;
+    animation: float 5s ease-in-out infinite;
+  }
+  
+  /* Simple Float Animation */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  /* Blobs */
+  .about-blobs .blob {
+    position: absolute;
+    border-radius: 50%;
+    background: gold;
+    opacity: 0.05;
+    z-index: 0;
+  }
+  
+  .blob1 {
+    width: 300px;
+    height: 300px;
+    top: -50px;
+    left: -80px;
+  }
+  
+  .blob2 {
+    width: 250px;
+    height: 250px;
+    bottom: -60px;
+    right: -100px;
+  }
+  
+  /* Fade In */
+  .fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-section,
+    .services-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image-frame img,
+    .services-image-frame img {
+      max-width: 280px;
+    }
+  
+    .about-text h1,
+    .services-text h2 {
+      font-size: 2rem;
+    }
+  }
+  .about-text p,
+.services-text ul li {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem; /* Slightly tighter vertical rhythm */
+}
