@@ -51,8 +51,8 @@ const projects = [
   {
     id: 6,
     title: "Project Six",
-    thumbnail: "/prj7.png",
-    fullImage: "/prj7.png",
+    thumbnail: "/prj6.png",
+    fullImage: "/prj6.png",
     technologies: ["React", "tailwindCss", "HTML"],
     description: "Creative weather forcast website  .",
   },

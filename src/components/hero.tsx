@@ -68,7 +68,7 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text */}
           <div className="order-2 md:order-1 text-center md:text-left">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight mb-6">
+            <h1 className="text-5xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-6">
               Hello, I’m{" "}
               <span className="block text-[#FF6B6B] drop-shadow-md">
                 George Michael
@@ -94,7 +94,7 @@ export default function Hero() {
           <div className="order-1 md:order-2 flex justify-center md:justify-end">
             <div className="relative">
               <img
-                src="/ME1.png"
+                src="/ME1.jpg"
                 alt="George Victor"
                 className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl object-contain drop-shadow-2xl animate-floatZoom"
               />
