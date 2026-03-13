@@ -166,7 +166,7 @@ export default function Contact() {
       </div>
 
       {/* Same floating animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes floatSlow {
           0%,
           100% {

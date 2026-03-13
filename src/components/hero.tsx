@@ -112,7 +112,7 @@ export default function Hero() {
       </div>
 
       {/* Slower, gentler animations for the hero */}
-      <style jsx>{`
+      <style>{`
         @keyframes floatSlow {
           0%,
           100% {
